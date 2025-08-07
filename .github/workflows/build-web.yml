@@ -1,0 +1,103 @@
+name: Build Web App
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install Flet
+      run: pip install flet==0.24.1
+    
+    - name: Create web files
+      run: |
+        # Create all required JSON files
+        echo '[]' > quotes.json
+        echo '{}' > settings.json
+        echo '{}' > user_preferences.json
+        
+        # Build web version
+        echo "Building web version..."
+        flet build web --base-url /calculadora-3d/ || true
+    
+    - name: Prepare for GitHub Pages
+      run: |
+        # If web build exists, prepare it
+        if [ -d build/web ]; then
+          cp -r build/web/* .
+          echo "Web build prepared"
+        else
+          # Create a simple HTML fallback
+          cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora 3D Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { font-size: 3em; margin-bottom: 0.5em; }
+        p { font-size: 1.2em; opacity: 0.9; }
+        .button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .button:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 Calculadora 3D Pro</h1>
+        <p>Aplicación profesional para cálculo de costos de impresión 3D</p>
+        <div>
+            <a href="https://github.com/sidfrir/calculadora-3d/releases" class="button">Descargar APK</a>
+            <a href="https://github.com/sidfrir/calculadora-3d" class="button">Ver Código</a>
+        </div>
+    </div>
+</body>
+</html>
+EOF
+        fi
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        cname: calculadora3d.app
