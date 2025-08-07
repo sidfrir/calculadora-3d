@@ -1,0 +1,25 @@
+[
+  {
+    "id": "7c11a69d-9658-4db8-8a11-66e8df660e92",
+    "name": "PLA Premium",
+    "material_type": "PLA",
+    "price_per_kg": 25.0,
+    "density": 1.24,
+    "color": "",
+    "manufacturer": "",
+    "supplier": "",
+    "created_at": "2025-08-03T14:16:58.493014",
+    "updated_at": "2025-08-03T14:16:58.497831",
+    "status": "active",
+    "stock_quantity": 10.5,
+    "min_stock_alert": 1.0,
+    "notes": "",
+    "properties": {
+      "printing_temp": "190-220\u00b0C",
+      "bed_temp": "50-60\u00b0C",
+      "diameter": "1.75mm",
+      "finish": "Glossy",
+      "strength": "Medium"
+    }
+  }
+]

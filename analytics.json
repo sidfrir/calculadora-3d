@@ -1,0 +1,18 @@
+{
+  "app_starts": 3,
+  "calculations_made": 3,
+  "quotes_saved": 3,
+  "csv_exports": 0,
+  "settings_changes": 0,
+  "time_spent": 0,
+  "last_used": "2025-08-03T17:06:44.817541",
+  "most_used_features": {
+    "gestion_proyectos": 3,
+    "gestion_clientes": 1,
+    "gestion_materiales": 1,
+    "gestion_impresoras": 1,
+    "gestion_tareas": 3,
+    "gestion_presupuestos": 3
+  },
+  "user_preferences": {}
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flet"]
+
+[project]
+name = "calculadora-3d-pro"
+version = "1.0.0"
+description = "Calculadora 3D Pro - Gestión completa para impresión 3D"
+authors = [{name = "Usuario", email = "usuario@example.com"}]
+dependencies = []
+
+[tool.flet]
+module_name = "main_mobile"
+dist_path = "dist"
+
+[tool.flet.android]
+package = "com.calculadora3d.pro"
+app_name = "Calculadora 3D Pro"
+app_short_name = "3D Calc Pro"
+app_description = "Aplicación completa para gestión de impresión 3D"
+icon = "assets/icon.png"
+adaptive_icon_background = "#2196F3"
+permissions = ["WRITE_EXTERNAL_STORAGE", "READ_EXTERNAL_STORAGE"]
+
+[tool.flet.android.splash]
+color = "#2196F3"
+image = "assets/icon.png"

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "bea6af61-bab6-43e7-8b59-02962695bebb",
+    "name": "emanuel peron",
+    "email": "",
+    "phone": "",
+    "company": "AIC",
+    "address": "",
+    "created_at": "2025-08-03T20:25:12.849231",
+    "updated_at": "2025-08-03T20:25:12.849241",
+    "status": "active",
+    "total_spent": 0.0,
+    "quote_count": 0,
+    "last_contact": null,
+    "notes": "",
+    "preferred_filament": "PLA",
+    "discount_rate": 0.0
+  }
+]

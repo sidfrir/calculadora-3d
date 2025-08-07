@@ -1,0 +1,74 @@
+[
+  {
+    "id": "e9507434-86de-4eab-85df-c796201498ea",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "d5e59cf6-ab80-4242-b09c-56b3d2b90d7b",
+    "date": "2025-08-03T14:24:13.414420",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "865f9d03-92c2-4780-b519-371f0565652f",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "d5e59cf6-ab80-4242-b09c-56b3d2b90d7b",
+    "date": "2025-08-03T14:24:13.424654",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "811b2e34-afe1-477e-acd9-9c3dfbc4fd90",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "06f7ff51-8fe5-40b4-ae62-5fd7edd38502",
+    "date": "2025-08-03T17:01:02.020682",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "95473ee2-a5dd-4b34-9bf9-8f173523f1c6",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "06f7ff51-8fe5-40b4-ae62-5fd7edd38502",
+    "date": "2025-08-03T17:01:02.023862",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "3d191d5f-c1b0-4979-ad43-4a572af8df70",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "91396bbf-28f1-4df0-a8f4-8fb20c9d0af6",
+    "date": "2025-08-03T17:06:44.796741",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "611d0f46-b264-4cea-8f47-77e112fb1bed",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "91396bbf-28f1-4df0-a8f4-8fb20c9d0af6",
+    "date": "2025-08-03T17:06:44.805717",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  }
+]

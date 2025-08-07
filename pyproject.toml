@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flet"]
+
+[project]
+name = "Calculadora 3D Pro"
+version = "2.0.0"
+description = "Calculadora profesional para impresión 3D"
+authors = [{name = "Tu Nombre", email = "tu@email.com"}]
+dependencies = ["flet==0.24.1"]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[tool.flet]
+module = "main_mobile"
+name = "Calculadora 3D Pro"
+org = "com.miempresa"
+version = "2.0.0"
+dist_path = "dist"
+permissions = [
+    "android.permission.INTERNET",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.READ_EXTERNAL_STORAGE"
+]
+icon = "assets/icon.png"
+adaptive_icon_background = "#2196F3"
+
+[tool.flet.android]
+package = "com.calculadora3d.pro"
+name = "Calculadora 3D Pro"
+short_name = "3D Calc Pro"
+description = "Aplicación completa para gestión de impresión 3D - Sin conexión requerida"
+min_sdk_version = 21
+target_sdk_version = 33
+permissions = [
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.INTERNET"
+]
+features = [
+    "android.hardware.touchscreen"
+]

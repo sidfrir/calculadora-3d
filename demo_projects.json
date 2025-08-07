@@ -1,0 +1,114 @@
+[
+  {
+    "id": "0976bc66-8beb-4ad6-962e-424405ff1bba",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T14:13:58.892678",
+    "updated_at": "2025-08-03T14:13:58.899263",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T14:13:58.895964",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "4f864f68-e4ee-4e4d-bcfd-a15cc0b1dffd",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T14:16:58.476143",
+    "updated_at": "2025-08-03T14:16:58.480848",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T14:16:58.478107",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "06550d29-d7a1-4e37-8864-5a805494b520",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T14:17:23.360248",
+    "updated_at": "2025-08-03T14:17:23.363628",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T14:17:23.361903",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "6b482cf0-b371-425e-b0f5-a95174e8a40c",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T14:19:58.748718",
+    "updated_at": "2025-08-03T14:19:58.754750",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T14:19:58.752521",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "2909892b-6f89-4418-baec-a486e4d72b0a",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T14:20:21.184384",
+    "updated_at": "2025-08-03T14:20:21.189731",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T14:20:21.186673",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "ec2893d3-43c8-4221-917f-0b6b0fa45450",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T17:01:28.902354",
+    "updated_at": "2025-08-03T17:01:28.910962",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T17:01:28.907589",
+    "client": "CLI001",
+    "notes": ""
+  },
+  {
+    "id": "5d7b5081-7e80-4b2e-bc3a-9d5f0a0344a1",
+    "name": "Proyecto de Impresi\u00f3n Personalizada",
+    "description": "Creaci\u00f3n de piezas personalizadas para cliente importante",
+    "created_at": "2025-08-03T17:06:51.997909",
+    "updated_at": "2025-08-03T17:06:52.002658",
+    "status": "in_progress",
+    "quotes": [
+      "QUOTE001"
+    ],
+    "budget": 1500.0,
+    "actual_cost": 0.0,
+    "deadline": "2025-09-02T17:06:52.000409",
+    "client": "CLI001",
+    "notes": ""
+  }
+]

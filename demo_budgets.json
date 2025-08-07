@@ -1,0 +1,134 @@
+[
+  {
+    "id": "c38c63a9-690c-406d-bb68-848c88b97fda",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T14:19:58.797213",
+    "updated_at": "2025-08-03T14:19:58.799450",
+    "start_date": "2025-08-03T14:19:58.797230",
+    "end_date": "2025-09-02T14:19:58.797238",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 0.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "2903a8a4-2ab5-41b1-8abb-e8c8760a92f4",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T14:19:58.799441",
+        "type": "expense"
+      }
+    ]
+  },
+  {
+    "id": "3d5b8702-968c-4dc8-a816-1df1c9b5bb98",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T14:20:21.215085",
+    "updated_at": "2025-08-03T14:20:21.222499",
+    "start_date": "2025-08-03T14:20:21.215100",
+    "end_date": "2025-09-02T14:20:21.215106",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "71fcd095-1fec-4328-a06d-fe51235a94f6",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T14:20:21.218639",
+        "type": "expense"
+      },
+      {
+        "id": "31f1225d-de78-46c8-8df2-98cdc9da86be",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T14:20:21.222489",
+        "type": "income"
+      }
+    ]
+  },
+  {
+    "id": "76643250-9b94-46ae-9a2b-8fe95e0524ff",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T17:01:28.953603",
+    "updated_at": "2025-08-03T17:01:28.963716",
+    "start_date": "2025-08-03T17:01:28.953613",
+    "end_date": "2025-09-02T17:01:28.953620",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "ee193849-b8ef-4a52-9b69-78bc78556c49",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T17:01:28.956122",
+        "type": "expense"
+      },
+      {
+        "id": "6e7bc907-1bca-41e3-b4fc-665e002a2053",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T17:01:28.963703",
+        "type": "income"
+      }
+    ]
+  },
+  {
+    "id": "5f029f94-56bb-42bb-908b-b453eb6ecec6",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T17:06:52.051633",
+    "updated_at": "2025-08-03T17:06:52.059982",
+    "start_date": "2025-08-03T17:06:52.051643",
+    "end_date": "2025-09-02T17:06:52.051649",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "bad93944-d287-4452-9b35-cc3ba9daf5fd",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T17:06:52.054944",
+        "type": "expense"
+      },
+      {
+        "id": "90a227b0-9d89-4e78-b2df-c61c6473f523",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T17:06:52.059973",
+        "type": "income"
+      }
+    ]
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d5e59cf6-ab80-4242-b09c-56b3d2b90d7b",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T14:24:13.410124",
+    "updated_at": "2025-08-03T14:24:13.424695",
+    "start_date": "2025-08-03T14:24:13.410148",
+    "end_date": "2025-09-02T14:24:13.410159",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "5604cd63-fd01-4fa5-9ea5-aa3e2d3e1ee0",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T14:24:13.414473",
+        "type": "expense"
+      },
+      {
+        "id": "f2afa94a-d2f0-44f0-8033-4f4ee08f39b3",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T14:24:13.424686",
+        "type": "income"
+      }
+    ]
+  },
+  {
+    "id": "06f7ff51-8fe5-40b4-ae62-5fd7edd38502",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T17:01:02.019014",
+    "updated_at": "2025-08-03T17:01:02.023901",
+    "start_date": "2025-08-03T17:01:02.019035",
+    "end_date": "2025-09-02T17:01:02.019044",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "7e85122d-2824-4057-bbd3-65004aa1bf43",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T17:01:02.020721",
+        "type": "expense"
+      },
+      {
+        "id": "7921c8bc-3e05-4932-8786-0ecb170cdd3e",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T17:01:02.023891",
+        "type": "income"
+      }
+    ]
+  },
+  {
+    "id": "91396bbf-28f1-4df0-a8f4-8fb20c9d0af6",
+    "name": "Presupuesto Mensual Impresi\u00f3n",
+    "period": "monthly",
+    "amount": 5000.0,
+    "created_at": "2025-08-03T17:06:44.788792",
+    "updated_at": "2025-08-03T17:06:44.805763",
+    "start_date": "2025-08-03T17:06:44.788809",
+    "end_date": "2025-09-02T17:06:44.788817",
+    "status": "active",
+    "category": "general",
+    "description": "",
+    "spent_amount": 1200.0,
+    "reserved_amount": 800.0,
+    "notes": "",
+    "alert_threshold": 0.8,
+    "transactions": [
+      {
+        "id": "8dc0e097-4fa1-48d0-8d3e-c7f708bb87c7",
+        "amount": 1200.0,
+        "description": "Compra de filamento PLA",
+        "category": "materiales",
+        "date": "2025-08-03T17:06:44.796785",
+        "type": "expense"
+      },
+      {
+        "id": "00fbe157-8a22-4ae1-99a6-c7eaca2df8e7",
+        "amount": 0,
+        "description": "Reserva: Mantenimiento de impresoras",
+        "category": "general",
+        "date": "2025-08-03T17:06:44.805754",
+        "type": "income"
+      }
+    ]
+  }
+]

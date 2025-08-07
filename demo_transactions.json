@@ -1,0 +1,86 @@
+[
+  {
+    "id": "6e09ce63-81f0-4e35-a8b2-caf21a4c6152",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "c38c63a9-690c-406d-bb68-848c88b97fda",
+    "date": "2025-08-03T14:19:58.799398",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "0435d22d-3ea7-46de-ba72-79e487e437bd",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "3d5b8702-968c-4dc8-a816-1df1c9b5bb98",
+    "date": "2025-08-03T14:20:21.218596",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "de0dbe75-d5cb-49e0-81c4-8db2c6855177",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "3d5b8702-968c-4dc8-a816-1df1c9b5bb98",
+    "date": "2025-08-03T14:20:21.222460",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "e862996b-4117-44a6-8e52-a0436af02b1c",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "76643250-9b94-46ae-9a2b-8fe95e0524ff",
+    "date": "2025-08-03T17:01:28.956082",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "c9d088dd-31f1-4c86-84d7-3f5888e1ced3",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "76643250-9b94-46ae-9a2b-8fe95e0524ff",
+    "date": "2025-08-03T17:01:28.963663",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "737710c5-9902-437a-9af7-dc0e8468f8ce",
+    "amount": 1200.0,
+    "description": "Compra de filamento PLA",
+    "budget_id": "5f029f94-56bb-42bb-908b-b453eb6ecec6",
+    "date": "2025-08-03T17:06:52.054896",
+    "category": "materiales",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  },
+  {
+    "id": "f3e05f31-f6f4-49e7-82e7-4f986cc14296",
+    "amount": 0,
+    "description": "Reserva: Mantenimiento de impresoras",
+    "budget_id": "5f029f94-56bb-42bb-908b-b453eb6ecec6",
+    "date": "2025-08-03T17:06:52.059945",
+    "category": "general",
+    "type": "income",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  }
+]

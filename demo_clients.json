@@ -1,0 +1,19 @@
+[
+  {
+    "id": "fa91f71b-f56f-4a12-bacf-afe4ee8809dd",
+    "name": "Empresa XYZ",
+    "email": "contacto@empresa-xyz.com",
+    "phone": "+1234567890",
+    "company": "Empresa XYZ S.A.",
+    "address": "Av. Principal 123, Ciudad",
+    "created_at": "2025-08-03T14:13:58.911404",
+    "updated_at": "2025-08-03T14:13:58.916726",
+    "status": "active",
+    "total_spent": 2500.0,
+    "quote_count": 1,
+    "last_contact": null,
+    "notes": "[2025-08-03 14:13:58] Cliente interesado en grandes vol\u00famenes",
+    "preferred_filament": "PLA",
+    "discount_rate": 0.0
+  }
+]

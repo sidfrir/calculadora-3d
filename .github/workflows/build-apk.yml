@@ -1,0 +1,67 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install Flet
+      run: |
+        pip install flet==0.24.1
+    
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.22.0'
+        channel: 'stable'
+    
+    - name: Build APK with Flet
+      run: |
+        flet build apk --verbose
+    
+    - name: Upload APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: calculadora-3d-pro-apk
+        path: |
+          build/apk/*.apk
+          build/app/outputs/flutter-apk/*.apk
+          build/app/outputs/apk/release/*.apk
+        if-no-files-found: warn
+    
+    - name: Create Release
+      if: github.event_name == 'push'
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        name: Release v1.0.${{ github.run_number }}
+        files: |
+          build/apk/*.apk
+          build/app/outputs/flutter-apk/*.apk
+        body: |
+          ## Calculadora 3D Pro - APK Android
+          
+          ### Características:
+          - Cálculo de costos de impresión 3D
+          - Gestión de cotizaciones
+          - Configuración de moneda (USD/ARS)
+          - Base de datos local
+          
+          ### Instalación:
+          1. Descarga el APK
+          2. Habilita "Fuentes desconocidas" en tu Android
+          3. Instala y disfruta
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

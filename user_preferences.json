@@ -1,0 +1,10 @@
+{
+  "animations_enabled": true,
+  "transition_speed": "normal",
+  "startup_view": "/",
+  "auto_save_quotes": true,
+  "currency_display": "symbol",
+  "decimal_places": 2,
+  "recent_filaments": [],
+  "favorite_settings": {}
+}

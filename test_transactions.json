@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1578dcb2-3a9a-44e7-bf47-d1e82ab7a247",
+    "amount": 100.0,
+    "description": "Gasto de prueba",
+    "budget_id": "db26ed3e-0b6b-4572-ac82-e07843ae9c60",
+    "date": "2025-08-03T14:00:06.253514",
+    "category": "general",
+    "type": "expense",
+    "notes": "",
+    "related_quote_id": "",
+    "related_project_id": ""
+  }
+]

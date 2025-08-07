@@ -1,0 +1,107 @@
+[
+  {
+    "id": "d5735004-54d3-4604-ae64-5c1fe6dd9eb7",
+    "title": "Preparar cotizaci\u00f3n para proyecto XYZ",
+    "description": "Crear cotizaci\u00f3n detallada para 50 piezas personalizadas",
+    "created_at": "2025-08-03T14:17:23.472102",
+    "updated_at": "2025-08-03T14:17:23.479216",
+    "due_date": "2025-08-06T14:17:23.479183",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "project_id": "",
+    "client_id": "",
+    "related_quote_id": "",
+    "tags": [
+      "cotizaci\u00f3n",
+      "urgente"
+    ],
+    "notes": "",
+    "reminder_date": null,
+    "completed_at": null
+  },
+  {
+    "id": "1fb8be49-ed2a-49b2-84b3-4b707d846b96",
+    "title": "Preparar cotizaci\u00f3n para proyecto XYZ",
+    "description": "Crear cotizaci\u00f3n detallada para 50 piezas personalizadas",
+    "created_at": "2025-08-03T14:19:58.781949",
+    "updated_at": "2025-08-03T14:19:58.790945",
+    "due_date": "2025-08-06T14:19:58.790876",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "project_id": "",
+    "client_id": "",
+    "related_quote_id": "",
+    "tags": [
+      "cotizaci\u00f3n",
+      "urgente"
+    ],
+    "notes": "",
+    "reminder_date": null,
+    "completed_at": null
+  },
+  {
+    "id": "c659a66c-7f02-47b2-84fa-e24f00defca1",
+    "title": "Preparar cotizaci\u00f3n para proyecto XYZ",
+    "description": "Crear cotizaci\u00f3n detallada para 50 piezas personalizadas",
+    "created_at": "2025-08-03T14:20:21.203194",
+    "updated_at": "2025-08-03T14:20:21.209201",
+    "due_date": "2025-08-06T14:20:21.209158",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "project_id": "",
+    "client_id": "",
+    "related_quote_id": "",
+    "tags": [
+      "cotizaci\u00f3n",
+      "urgente"
+    ],
+    "notes": "",
+    "reminder_date": null,
+    "completed_at": null
+  },
+  {
+    "id": "44159b1d-3880-47b3-b5c1-441a0fcccf8a",
+    "title": "Preparar cotizaci\u00f3n para proyecto XYZ",
+    "description": "Crear cotizaci\u00f3n detallada para 50 piezas personalizadas",
+    "created_at": "2025-08-03T17:01:28.931677",
+    "updated_at": "2025-08-03T17:01:28.945914",
+    "due_date": "2025-08-06T17:01:28.945861",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "project_id": "",
+    "client_id": "",
+    "related_quote_id": "",
+    "tags": [
+      "cotizaci\u00f3n",
+      "urgente"
+    ],
+    "notes": "",
+    "reminder_date": null,
+    "completed_at": null
+  },
+  {
+    "id": "bbc5ff22-6b6d-400a-94cf-7cb5df90bf8b",
+    "title": "Preparar cotizaci\u00f3n para proyecto XYZ",
+    "description": "Crear cotizaci\u00f3n detallada para 50 piezas personalizadas",
+    "created_at": "2025-08-03T17:06:52.021450",
+    "updated_at": "2025-08-03T17:06:52.032910",
+    "due_date": "2025-08-06T17:06:52.032861",
+    "priority": "high",
+    "status": "in_progress",
+    "assigned_to": "",
+    "project_id": "",
+    "client_id": "",
+    "related_quote_id": "",
+    "tags": [
+      "cotizaci\u00f3n",
+      "urgente"
+    ],
+    "notes": "",
+    "reminder_date": null,
+    "completed_at": null
+  }
+]

@@ -1,0 +1,4 @@
+# Requisitos del Sistema 3D Pro - Versión Móvil
+# =============================================
+
+flet==0.24.1

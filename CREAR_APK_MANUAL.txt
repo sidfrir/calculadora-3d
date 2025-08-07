@@ -1,0 +1,28 @@
+
+# 📱 INSTRUCCIONES PARA CREAR APK MANUALMENTE
+
+## Método 1: Usando ApkTool Online (Más Fácil)
+1. Ve a: https://www.websitetoapk.com/ o https://appsgeyser.com/
+2. Ingresa la URL: http://[TU_IP]:8080
+3. Configura:
+   - Nombre: "Calculadora 3D Pro"
+   - Ícono: Sube el archivo assets/icon.png
+   - Orientación: Portrait
+4. Genera y descarga el APK
+5. Instala en tu móvil
+
+## Método 2: PWA Instalable (Recomendado)
+1. Ejecuta: `.venv\Scripts\python run_web_server.py`
+2. En tu móvil, abre Chrome
+3. Ve a: http://[IP_DE_TU_PC]:8080
+4. Menú > "Instalar aplicación"
+5. ¡Listo! Tendrás la app en tu pantalla de inicio
+
+## Método 3: Usando Capacitor
+1. Instala Node.js y Capacitor: `npm install -g @capacitor/cli`
+2. Crea proyecto: `npx cap init`
+3. Agrega Android: `npx cap add android`
+4. Construye: `npx cap build android`
+
+## ✅ Tu aplicación está lista para usar!
+El servidor web funciona perfectamente para acceso móvil.

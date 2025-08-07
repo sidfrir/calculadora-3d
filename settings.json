@@ -1,0 +1,23 @@
+{
+    "theme_mode": "dark",
+    "currency_symbol": "$",
+    "machine_cost_per_hour": 1000.0,
+    "electricity_kwh_price": 150.0,
+    "printer_power_watts": 150,
+    "filaments": {
+        "PLA": {
+            "price_per_kg": 20000.0
+        },
+        "PETG": {
+            "price_per_kg": 30000.0
+        },
+        "ABS": {
+            "price_per_kg": 28000.0
+        },
+        "TPU": {
+            "price_per_kg": 40000.0
+        }
+    },
+    "currency": "ARS",
+    "currency_name": "Pesos Argentinos (ARS)"
+}
