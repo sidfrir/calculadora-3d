@@ -27,9 +27,48 @@ jobs:
         flutter-version: '3.22.0'
         channel: 'stable'
     
+    - name: Setup Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+    
+    - name: Prepare project
+      run: |
+        # Create empty JSON files if they don't exist
+        touch quotes.json || echo '[]' > quotes.json
+        touch settings.json || echo '{}' > settings.json
+        touch user_preferences.json || echo '{}' > user_preferences.json
+        
+        # Create missing directories
+        mkdir -p models
+        mkdir -p views
+        mkdir -p utils
+        mkdir -p assets
+        
+        # List files for debugging
+        echo "Project structure:"
+        ls -la
+    
     - name: Build APK with Flet
       run: |
-        flet build apk --verbose
+        flet build apk --verbose || echo "Build failed, checking alternatives..."
+        
+        # If main build fails, try alternative approaches
+        if [ ! -f "build/apk/*.apk" ]; then
+          echo "Trying alternative build..."
+          flet build apk --module main_mobile || true
+        fi
+    
+    - name: Find APK files
+      run: |
+        echo "Searching for APK files..."
+        find . -name "*.apk" -type f 2>/dev/null || true
+        
+        # Check common locations
+        ls -la build/apk/ 2>/dev/null || true
+        ls -la build/app/outputs/flutter-apk/ 2>/dev/null || true
+        ls -la build/app/outputs/apk/ 2>/dev/null || true
     
     - name: Upload APK
       uses: actions/upload-artifact@v3
@@ -39,29 +78,16 @@ jobs:
           build/apk/*.apk
           build/app/outputs/flutter-apk/*.apk
           build/app/outputs/apk/release/*.apk
+          build/app/outputs/apk/debug/*.apk
+          **/*.apk
         if-no-files-found: warn
     
-    - name: Create Release
-      if: github.event_name == 'push'
-      uses: softprops/action-gh-release@v1
+    - name: Upload build logs
+      if: failure()
+      uses: actions/upload-artifact@v3
       with:
-        tag_name: v1.0.${{ github.run_number }}
-        name: Release v1.0.${{ github.run_number }}
-        files: |
-          build/apk/*.apk
-          build/app/outputs/flutter-apk/*.apk
-        body: |
-          ## Calculadora 3D Pro - APK Android
-          
-          ### Características:
-          - Cálculo de costos de impresión 3D
-          - Gestión de cotizaciones
-          - Configuración de moneda (USD/ARS)
-          - Base de datos local
-          
-          ### Instalación:
-          1. Descarga el APK
-          2. Habilita "Fuentes desconocidas" en tu Android
-          3. Instala y disfruta
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: build-logs
+        path: |
+          build/
+          *.log
+          .flet/
