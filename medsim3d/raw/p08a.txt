@@ -1,0 +1,13 @@
+gen urgente','Valorar elegibilidad para tratamiento de reperfusión según protocolo','Monitorización y manejo de parámetros fisiológicos'],emergency:true,deterioration:{interval:30,statuses:['Déficit neurológico más marcado','Somnolencia · empeoramiento neurológico'],messages:['La debilidad y la disartria se hacen más evidentes.','El paciente se vuelve más somnoliento y responde lentamente.'],vitals:[[ ['Temperatura','36.6 °C','normal'],['FC','92 lpm','normal'],['FR','20 rpm','normal'],['SpO₂','96 %','normal'],['PA','184/100','high'] ],[ ['Temperatura','36.6 °C','normal'],['FC','96 lpm','normal'],['FR','22 rpm','high'],['SpO₂','94 %','normal'],['PA','190/104','high'] ]]},visual:{breathingRate:1.8,breathDepth:.01,cough:false,restless:false,guarding:false,headache:false,skin:0xc8967d}}
+
+];
+
+const allDiagnoses=templates.map(c=>c.diagnosis);
+const asked=new Set(),examined=new Set(),studied=new Set(),wrongTreatments=new Set(),wrongUrgent=new Set();let selected='',caseData=null,lastCaseId='',caseNumber=0,lastCough=0,talkUntil=0,nextBlinkAt=1.2,blinkStrength=0,caseScore=100,diagnosed=false,treated=false,treatmentBlend=0,stabilized=false,caseStartedAt=0,emergencyStage=0,activePanelType='';
+const bubble=document.querySelector('#bubble'),backdrop=document.querySelector('#backdrop'),content=document.querySelector('#sheetContent'),progress=document.querySelector('#progress'),patientChip=document.querySelector('#patientChip'),statusText=document.querySelector('#statusText'),caseLabel=document.querySelector('#caseLabel'),cluesEl=document.querySelector('#clues'),scorePill=document.querySelector('#scorePill'),timerPill=document.querySelector('#timerPill');
+const viewButtons=[...document.querySelectorAll('[data-view]')];
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+const rand=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+function makeCase(){const pool=templates.filter(c=>c.id!==lastCaseId);const t=pick(pool.length?pool:templates);lastCaseId=t.id;const distractors=shuffle(allDiagnoses.filter(d=>d!==t.diagnosis)).slice(0,3);return {...t,name:pick(t.names),age:rand(t.ages[0],t.ages[1]),opening:pick(t.openings),options:shuffle([t.diagnosis,...distractors])}}
+function updateProgress
