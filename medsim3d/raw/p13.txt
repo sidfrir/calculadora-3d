@@ -1,0 +1,25 @@
+}statusText.textContent='Sin mejoría · reevaluar conducta';say(feedback);renderPanel('treatment');const rr=document.querySelector('#result');rr.className='result wrong';rr.textContent='⚠️ '+feedback}}
+ if(b.id==='nextCase')newCase();
+});
+
+const host=document.querySelector('#scene');
+const avatarStatus=document.querySelector('#avatarStatus');
+const META_PERSON={
+  Masculino:'https://metaperson.avatarsdk.com/avatars/00b036dc-ac74-4822-9175-3046d17a2fe5/model.glb',
+  Femenino:'https://metaperson.avatarsdk.com/avatars/25890977-bec6-4039-845e-b977914b5c1e/model.glb'
+};
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xdbe8e4);scene.fog=new THREE.Fog(0xdbe8e4,7,13);
+const isMobile=matchMedia('(max-width: 760px)').matches;const camera=new THREE.PerspectiveCamera(isMobile?30:34,innerWidth/innerHeight,.05,50);camera.position.set(0,isMobile ? .92 : 1.15,isMobile ? 2.7 : 3.35);
+const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'});renderer.setPixelRatio(Math.min(devicePixelRatio,1.35));renderer.setSize(innerWidth,innerHeight);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;host.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0xf5fff9,0x74847f,1.65));const key=new THREE.DirectionalLight(0xffffff,2.6);key.position.set(3,5,4);key.castShadow=true;key.shadow.mapSize.set(1024,1024);scene.add(key);const fill=new THREE.PointLight(0xdff6ff,18,7);fill.position.set(-2.5,2.2,1.5);scene.add(fill);
+function mat(c,r=.78){return new THREE.MeshStandardMaterial({color:c,roughness:r})}
+const floorY=-1.25;const floor=new THREE.Mesh(new THREE.PlaneGeometry(12,12),mat(0xd8ded9,.82));floor.rotation.x=-Math.PI/2;floor.position.y=floorY;floor.receiveShadow=true;scene.add(floor);const wall=new THREE.Mesh(new THREE.BoxGeometry(8,6,.14),mat(0xeef3ef,.92));wall.position.set(0,1.9,-3);scene.add(wall);
+const cab=new THREE.Mesh(new THREE.BoxGeometry(1.9,.68,.72),mat(0xb7c8c1,.55));cab.position.set(-2.35,-.83,-1.55);scene.add(cab);const bed=new THREE.Mesh(new THREE.BoxGeometry(1.92,.12,.78),mat(0xe9f1ef,.48));bed.position.set(2.25,-.58,-1.2);scene.add(bed);const bedBase=new THREE.Mesh(new THREE.BoxGeometry(1.85,.54,.72),mat(0xc9d9d5,.62));bedBase.position.set(2.25,-.92,-1.2);scene.add(bedBase);const poster=new THREE.Mesh(new THREE.PlaneGeometry(1.5,.9),mat(0xd6ebe6,.75));poster.position.set(-2.15,1.38,-2.91);scene.add(poster);
+
+// Fallback procedural patient: remains available if the remote realistic avatar cannot load.
+const fallback=new THREE.Group();fallback.position.y=-.25;scene.add(fallback);const torso=new THREE.Mesh(new THREE.BoxGeometry(1.02,1.4,.5,4,4,2),mat(0x315c66,.85));torso.position.set(0,1.15,0);torso.castShadow=true;fallback.add(torso);const headMat=mat(0xc88f75,.85);const head=new THREE.Mesh(new THREE.SphereGeometry(.4,28,28),headMat);head.position.set(0,2.25,0);fallback.add(head);const hair=new THREE.Mesh(new THREE.SphereGeometry(.405,28,14,0,Math.PI*2,0,Math.PI*.48),mat(0x2b2421,.9));hair.position.copy(head.position);hair.position.y+=.03;fallback.add(hair);function limb(x,y,z,len,color,rz=0){const g=new THREE.CapsuleGeometry(.16,len,6,12),m=new THREE.Mesh(g,mat(color,.85));m.position.set(x,y,z);m.rotation.z=rz;fallback.add(m);return m}const leftArm=limb(-.68,1.14,0,.92,0x315c66,-.15),rightArm=limb(.68,1.14,0,.92,0x315c66,.15);limb(-.28,-.18,0,1.18,0x293944);limb(.28,-.18,0,1.18,0x293944);
+
+const loader=new GLTFLoader();const avatarCache={};const avatarPromises={};let activeAvatar=null;
+function normalizeAvatar(model){model.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;if(o.material){o.material.envMapIntensity=.28;o.material.needsUpdate=true}}});model.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(model),size=new THREE.Vector3();box.getSize(size);const baseScale=1.74/Math.max(.01,size.y);model.scale.setScalar(baseScale);model.updateMatrixWorld(true);const b2=new THREE.Box3().setFromObject(model),center=new THREE.Vector3();b2.getCenter(center);model.position.x-=center.x;model.position.z-=center.z;model.position.y-=b2.min.y;return baseScale}
+function findBone(root,names){let found=null;root.traverse(o=>{if(found||!o.isBone)return;const n=(o.name||'').toLowerCase();if(names.some(k=>n===k||n.includes(k)))found=o});return found}
+function captureRig(model){const rig={head:findBone(model,['head
